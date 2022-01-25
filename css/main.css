@@ -33,7 +33,6 @@ html {
 }
 
 .hamburger {
-  display: none;
   position: fixed;
   width: 40px;
   height: 40px;
@@ -53,6 +52,7 @@ html {
           flex-direction: column;
   padding: 8px 0px;
   z-index: 3;
+  display: none;
 }
 
 .hamburger .line1,
