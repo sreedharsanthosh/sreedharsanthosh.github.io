@@ -24,7 +24,7 @@ html {
 
 .underlined {
   text-decoration: underline;
-  text-underline-offset: -2px;
+  text-underline-offset: 0px;
   text-decoration-color: #6c63ff;
   text-decoration-thickness: 5px;
   color: #4e4e4e;
@@ -70,9 +70,16 @@ html {
   color: white;
   cursor: pointer;
   transition: all 0.4s ease;
+  a {
+    color: white;
+    transition: all 0.3s ease;
+  }
   &:hover {
     background: transparent;
     color: #4e4e4e;
+    a {
+      color: black;
+    }
   }
 }
 
