@@ -3,211 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="bt-ig9huUEf1FnZLkT3rOHtRXfm9f0UR2UPSkBxA9Xc"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rambla&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Capriola&display=swap"
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sreedhar Santhosh</title>
   </head>
   <body>
-    <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home" class="link1 active-link">Home</a></li>
-        <li><a href="#works" class="link2">Works</a></li>
-        <li><a href="#contact" class="link3">Contact</a></li>
-      </ul>
-    </nav>
     <div class="home" id="home">
       <div class="text">
-        <h1 class="primary-heading">Hola! I am</h1>
-        <h1 class="special-heading">Sreedhar Santhosh</h1>
-        <p class="primary-para">
-          I am a student and I like to build web apps in my free time.I like to
-          trace new and awesome technologies to build more interesting projects
+        <h2>Hello! I am</h2>
+        <h1 class="name">Sreedhar Santhosh</h1>
+        <p>
+          I am an aspiring web developer who is eager to learn more to build
+          more cool projects
         </p>
-        <div class="btn-primary">My works</div>
+        <button class="primary-btn">My Works</button>
+        <div class="icons">
+          <span class="line"></span><i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i><span class="line"></span>
+        </div>
       </div>
-      <div class="image-home">
+      <div class="image">
         <img
-          src="./images/person.svg"
-          alt="Illustration of a person standing"
+          src="./assets/images/undraw_to_the_stars_re_wq2x 1.png"
+          alt="Svg of a Rocket about to launch"
         />
       </div>
+      <svg
+        viewBox="0 0 1440 320"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 224L60 240C120 256 240 288 360 288C480 288 600 256 720 224C840 192 960 160 1080 138.7C1200 117 1320 107 1380 101.3L1440 96V320H1380C1320 320 1200 320 1080 320C960 320 840 320 720 320C600 320 480 320 360 320C240 320 120 320 60 320H0L0 224Z"
+          fill="white"
+        />
+      </svg>
     </div>
-    <div class="skills">
-      <h1 class="primary-heading underlined">Skills</h1>
+    <div class="skills" id="skills">
+      <h1 class="primary-head">What I'm good at</h1>
       <div class="skills-container">
-        <div class="skills-text-area">
-          <h1 class="primary-heading">What all I know?</h1>
-          <p>I wouldn't say I'm fluent, but I know these technologies</p>
+        <h3>I wouldn't say I'm fluent but I know these technologies.</h3>
+        <div class="icons">
+          <img src="./assets/images/html.svg" alt="Html icons" />
+          <img src="./assets/images/css.svg" alt="css icon" />
+          <img src="./assets/images/js.svg" alt="Javascript icon" />
+          <img src="./assets/images/scss.svg" alt="scss icon" />
+          <img src="./assets/images/react.svg" alt="React icon" />
+          <img src="./assets/images/nodejs.svg" alt="NodeJs icon" />
         </div>
-        <div class="skills-icons-area">
-          <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
-          <img src="https://img.icons8.com/color/48/000000/css3.png" />
-          <img
-            src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-          />
-          <img src="https://img.icons8.com/color/48/000000/sass.png" />
-          <img src="https://img.icons8.com/fluency/48/000000/node-js.png" />
-          <img
-            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"
-          />
+      </div>
+      <div class="worked-on">
+        <h1 class="primary-head">I've worked on</h1>
+        <div class="works-container">
+          <div class="works-card">
+            <img
+              src="./assets/images/frontend.svg"
+              alt="Image of a website mockup"
+            />
+            <div class="text">
+              <h1>Front end</h1>
+              <p>
+                I started web development with frontend and now I am pretty good
+                at it
+              </p>
+            </div>
+          </div>
+          <div class="works-card">
+            <img src="./assets/images/ui.svg" alt="Image of a website mockup" />
+            <div class="text">
+              <h1>UI/UX</h1>
+              <p>
+                Even though I’m not perfect at it I’m getting better with each
+                project.
+              </p>
+            </div>
+          </div>
+          <div class="works-card">
+            <img
+              src="./assets/images/backend.svg"
+              alt="Image of a website mockup"
+            />
+            <div class="text">
+              <h1>Back end</h1>
+              <p>
+                I have worked on many personal projects using nodejs and mongodb
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="works" id="works">
-      <h1 class="primary-heading underlined">Some of my works</h1>
-      <section class="card">
-        <div class="card-text">
-          <h1 class="primary-heading">Droid-ng</h1>
-          <p>
-            Droid-ng is an android custom rom based on lineage os which aims to
-            provide good performance
-          </p>
-          <button
-            class="btn-primary"
-            style="background: #ffa7a4; border: 2px solid #ffa7a4"
-          >
-            <a
-              href="https://droid-ng.netlify.app/"
-              target="blank"
-              style="text-decoration: none"
-              >Check it out</a
-            >
-          </button>
-        </div>
-        <div class="card-img" style="background: #ffa7a4">
-          <img
-            src="./images/droid-ng.png"
-            alt="Screenshot of the Droid-ng official website"
-          />
-        </div>
-      </section>
-      <section class="card">
-        <div class="card-img" style="background: #89ffea">
-          <img
-            src="./images/linkshorten.png"
-            alt="Screenshot of the project materium official website"
-          />
-        </div>
-        <div class="card-text">
-          <h1 class="primary-heading">Link Shotener</h1>
-          <p>
-            Get your links shortened for commercial use in just a click using
-            the linkshortener
-          </p>
-          <button
-            class="btn-primary"
-            style="background: #89ffea; border: 2px solid #89ffea"
-          >
-            <a
-              href="https://linkshorten.netlify.app"
-              target="blank"
-              style="text-decoration: none"
-              >Check it out</a
-            >
-          </button>
-        </div>
-      </section>
-      <section class="card">
-        <div class="card-text">
-          <h1 class="primary-heading">Project Kasumi</h1>
-          <p>
-            Project kasumi is yet another lineage based custom rom with a
-            weebish theme for all the weebs out there
-          </p>
-          <button
-            class="btn-primary"
-            style="background: #9fa8ef; border: 2px solid #9fa8ef"
-          >
-            <a
-              href="https://projectkasumi.netlify.app"
-              target="blank"
-              style="text-decoration: none"
-              >Check it out</a
-            >
-          </button>
-        </div>
-        <div class="card-img" style="background: #9fa8ef">
-          <img
-            src="./images/kasumi.png"
-            alt="Screenshot of the project materium official website"
-          />
-        </div>
-      </section>
-    </div>
-    <div class="contact" id="contact">
-      <h1 class="primary-heading underlined">Connect with me</h1>
-      <div class="contact-container">
-        <div class="contact-text">
-          <div class="part1">
-            Feel free to connect with me. Either via
-            <span class="underlined"
-              ><a href="https://instagram.com/sreedhar__santhosh" target="blank"
-                >Instagram</a
-              ></span
-            >
-            or
-            <span class="underlined"
-              ><a href="https://twitter.com/SreedharSantho2" target="bkank"
-                >Twitter</a
-              ></span
-            >
+      <svg
+        viewBox="0 0 1438 271"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M-5 111L55.125 100.3C115.25 90 235.5 68 355.75 52.3C476 36 596.25 26 716.5 57.7C836.75 90 957 164 1077.25 201.7C1197.5 239 1317.75 239 1377.88 239H1438V-17H1377.88C1317.75 -17 1197.5 -17 1077.25 -17C957 -17 836.75 -17 716.5 -17C596.25 -17 476 -17 355.75 -17C235.5 -17 115.25 -17 55.125 -17H-5V111Z"
+          fill="white"
+        />
+      </svg>
+      <h1 class="primary-head">Some of my works</h1>
+      <div class="container">
+        <div class="card">
+          <div class="text">
+            <h1>Chat App</h1>
+            <h4>Chat app made using Reactjs and socket.io</h4>
+            <a href="https://chatapp-v2.vercel.app" target="_blank"
+              >Check it out <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
-          <div class="part2">
-            Or else you can mail me on:
-            <span class="underlined" style="font-weight: bold"
-              >sreedharsanthosh2005@gmail.com</span
-            >
+          <div
+            class="img"
+            style="background: url('./try.svg'); object-fit: cover"
+          >
+            <img
+              src="./assets/images/Group 11.png"
+              alt="Mockup of chatapp website"
+            />
           </div>
         </div>
-        <div class="contact-img">
-          <img src="./images/contact.svg" alt="Svg of a guy with contact" />
+        <div class="card">
+          <div class="img" style="background: #e7514b">
+            <img
+              src="./assets/images/Group 15.png"
+              alt="Mockup of chatapp website"
+            />
+          </div>
+          <div class="text">
+            <h1>Droid-ng</h1>
+            <h4>Droid-ng is an Android custom rom that aims to be the best.</h4>
+            <a href="https://droid-ng.eu.org" target="_blank"
+              >Check it out <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-contact">
-        <h1 class="primary-heading">Contact:</h1>
-        <h3>sreedharsanthosh2005@gmail.com</h3>
-        <div class="icons">
-          <a href="https://github.com/sreedharsanthosh" target="blank"
-            ><img src="./images/icons8-github.svg"
-          /></a>
-          <a href="https://twitter.com/SreedharSantho2" target="blank"
-            ><img src="./images/icons8-twitter.svg"
-          /></a>
-          <a href="https://instagram.com/sreedhar__santhosh" target="blank"
-            ><img src="./images/icons8-instagram.svg"
-          /></a>
+    <div class="connect">
+      <h1 class="primary-head">Wanna connect with me?</h1>
+      <div class="container">
+        <div class="left">
+          <div class="text">
+            <h1>Let's connect</h1>
+            <h3>here are some links to connect with me.</h3>
+            <div class="icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <h3>sreedharsanthosh2005@gmail.com</h3>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="right">
+          <h2>Message me if you wanna work together on something</h2>
+          <form>
+            <label for="email"
+              >Email: <input type="text" placeholder="Email"
+            /></label>
+            <label for="message"
+              >Message: <input type="text" placeholder="Message"
+            /></label>
+            <button type="submit">
+              Send <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
         </div>
       </div>
-      <ul class="footer-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </footer>
-    <script src="./app.js"></script>
+      <svg
+        width="598"
+        height="494"
+        viewBox="0 0 598 494"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_76_30)">
+          <path
+            d="M62.5612 1071.77C358.276 1071.77 598 831.848 598 535.886C598 239.924 358.276 0 62.5612 0C-233.153 0 -472.877 239.924 -472.877 535.886C-472.877 831.848 -233.153 1071.77 62.5612 1071.77Z"
+            fill="#14266A"
+            fill-opacity="0.25"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_76_30">
+            <rect width="598" height="494" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
   </body>
 </html>
