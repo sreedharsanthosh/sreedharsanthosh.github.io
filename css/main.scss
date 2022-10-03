@@ -9,6 +9,7 @@ $secondary-color: #14266a;
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +32,88 @@ h1 {
   @media only screen and(max-width: 769px) {
     font-size: 2rem;
     padding: 0.5rem;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1rem 0rem;
+  background: white;
+  transition: top 0.3s ease;
+  position: fixed;
+  top: 0vh;
+  z-index: 5;
+  transition: all 0.4s ease;
+  .nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    li a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+  }
+  @media only screen and(max-width: 768px) {
+    width: 40%;
+    height: 40%;
+    position: fixed;
+    top: 3vh;
+    right: 3vh;
+    opacity: 0;
+    pointer-events: none;
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      height: 60%;
+    }
+  }
+}
+
+.nav-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hamburger {
+  position: fixed;
+  padding: 0.7rem 0rem;
+  top: 3vh;
+  right: 3vh;
+  background: white;
+  border-radius: 50%;
+  width: 5vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+  display: none;
+  .line1,
+  .line2,
+  .line3 {
+    width: 60%;
+    height: 3px;
+    background: black;
+    transition: all 0.4s ease-out;
+  }
+  .line1-active {
+    transform: rotate(45deg);
+    margin-top: 2vh;
+  }
+  .line2-active {
+    opacity: 0;
+  }
+  .line3-active {
+    transform: rotate(-45deg);
+    margin-top: -1.5vh;
+  }
+  @media only screen and(max-width: 768px) {
+    display: flex;
   }
 }
 
@@ -67,6 +150,10 @@ h1 {
       color: white;
       font-size: 1.2rem;
       margin: 2rem 0rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
     .icons {
       width: 70%;
@@ -74,6 +161,10 @@ h1 {
       align-items: center;
       justify-content: space-around;
       font-size: 1.5rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
       .line {
         width: 30%;
         height: 4px;
@@ -89,6 +180,7 @@ h1 {
     }
   }
   svg {
+    pointer-events: none;
     position: absolute;
     bottom: -2px;
     path {
@@ -116,6 +208,14 @@ h1 {
   }
   @media only screen and(max-width: 768px) {
     flex-direction: column;
+    padding: 2rem 0rem;
+    align-items: center;
+    .text {
+      align-items: center;
+      .icons {
+        width: 100%;
+      }
+    }
     .image {
       margin: 0rem;
     }
@@ -329,6 +429,10 @@ h1 {
         .icons {
           margin: 1.5rem 0rem;
           font-size: 1.8rem;
+          a {
+            text-decoration: none;
+            color: white;
+          }
           i {
             margin: 0rem 0.5rem;
           }

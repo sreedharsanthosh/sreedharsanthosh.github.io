@@ -6,6 +6,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +32,92 @@ h1 {
   .primary-head {
     font-size: 2rem;
     padding: 0.5rem;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1rem 0rem;
+  background: white;
+  transition: top 0.3s ease;
+  position: fixed;
+  top: 0vh;
+  z-index: 5;
+  transition: all 0.4s ease;
+}
+nav .nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+}
+nav .nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 40%;
+    height: 40%;
+    position: fixed;
+    top: 3vh;
+    right: 3vh;
+    opacity: 0;
+    pointer-events: none;
+  }
+  nav .nav-links {
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+  }
+}
+
+.nav-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hamburger {
+  position: fixed;
+  padding: 0.7rem 0rem;
+  top: 3vh;
+  right: 3vh;
+  background: white;
+  border-radius: 50%;
+  width: 5vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+  display: none;
+}
+.hamburger .line1,
+.hamburger .line2,
+.hamburger .line3 {
+  width: 60%;
+  height: 3px;
+  background: black;
+  transition: all 0.4s ease-out;
+}
+.hamburger .line1-active {
+  transform: rotate(45deg);
+  margin-top: 2vh;
+}
+.hamburger .line2-active {
+  opacity: 0;
+}
+.hamburger .line3-active {
+  transform: rotate(-45deg);
+  margin-top: -1.5vh;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
   }
 }
 
@@ -70,12 +157,20 @@ h1 {
   font-size: 1.2rem;
   margin: 2rem 0rem;
 }
+.home .text button a {
+  text-decoration: none;
+  color: white;
+}
 .home .text .icons {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 1.5rem;
+}
+.home .text .icons a {
+  text-decoration: none;
+  color: white;
 }
 .home .text .icons .line {
   width: 30%;
@@ -90,6 +185,7 @@ h1 {
   width: 100%;
 }
 .home svg {
+  pointer-events: none;
   position: absolute;
   bottom: -2px;
 }
@@ -116,6 +212,14 @@ h1 {
 @media only screen and (max-width: 768px) {
   .home {
     flex-direction: column;
+    padding: 2rem 0rem;
+    align-items: center;
+  }
+  .home .text {
+    align-items: center;
+  }
+  .home .text .icons {
+    width: 100%;
   }
   .home .image {
     margin: 0rem;
@@ -334,6 +438,10 @@ h1 {
 .connect .container .left .text .icons {
   margin: 1.5rem 0rem;
   font-size: 1.8rem;
+}
+.connect .container .left .text .icons a {
+  text-decoration: none;
+  color: white;
 }
 .connect .container .left .text .icons i {
   margin: 0rem 0.5rem;

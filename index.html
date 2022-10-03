@@ -21,6 +21,18 @@
     <title>Sreedhar Santhosh</title>
   </head>
   <body>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Connect</a></li>
+      </ul>
+    </nav>
     <div class="home" id="home">
       <div class="text">
         <h2>Hello! I am</h2>
@@ -29,11 +41,16 @@
           I am an aspiring web developer who is eager to learn more to build
           more cool projects
         </p>
-        <button class="primary-btn">My Works</button>
+        <button class="primary-btn"><a href="#works"> My Works</a></button>
         <div class="icons">
-          <span class="line"></span><i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-github"></i><span class="line"></span>
+          <span class="line"></span>
+          <a href="https://instagram.com/sreedhar__santhosh" target="blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/sreedharsanthosh" target="blank"
+            ><i class="fa-brands fa-github"></i></a
+          ><span class="line"></span>
         </div>
       </div>
       <div class="image">
@@ -152,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="connect">
+    <div class="connect" id="contact">
       <h1 class="primary-head">Wanna connect with me?</h1>
       <div class="container">
         <div class="left">
@@ -160,9 +177,15 @@
             <h1>Let's connect</h1>
             <h3>here are some links to connect with me.</h3>
             <div class="icons">
-              <i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
+              <a href="https://github.com/sreedharsanthosh" target="blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://instagram.com/sreedhar__santhosh" target="blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/SreedharSantho2" target="blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
             </div>
             <h3>sreedharsanthosh2005@gmail.com</h3>
           </div>
@@ -204,5 +227,22 @@
         </defs>
       </svg>
     </div>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (window.innerWidth >= 880) {
+          if (prevScrollpos > currentScrollPos) {
+            document.querySelector("nav").style.top = "0vh";
+          } else {
+            document.querySelector("nav").style.top = "-15vh";
+          }
+        } else {
+          console.log("js loaded");
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
