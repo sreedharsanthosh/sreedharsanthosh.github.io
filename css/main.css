@@ -356,9 +356,26 @@ nav .nav-links li a {
   align-items: flex-start;
 }
 .works .container .card .text a {
+  font-size: 1.1rem;
   text-decoration: none;
   color: black;
   margin: 1rem 0rem;
+  position: relative;
+  overflow: hidden;
+}
+.works .container .card .text a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.works .container .card .text a:hover::after {
+  transform: translateX(0%);
 }
 .works .container .card .text h1 {
   margin: 0.5rem 0rem;
